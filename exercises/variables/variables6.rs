@@ -1,9 +1,11 @@
 // variables6.rs
 // Execute `rustlings hint variables6` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
 
-const NUMBER = 3;
+
 fn main() {
-    println!("Number {}", NUMBER);
+    let mut number: u8 = 255;
+    println!("Number {}", number);
+    number = number.wrapping_add(1);
+    println!("Number {}", number);
 }
